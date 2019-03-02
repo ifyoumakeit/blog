@@ -12,12 +12,12 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
-          marginBottom: rhythm(2.5),
+          padding: [rhythm(1.5), rhythm(2)].join(' '),
         }}
       >
-        <p>
+        <p style={{ margin: 0 }}>
           Written by <strong>Dave Garwacke</strong> who lives and works in New
-          York. This is complete copy of the Gatsby starter blog.
+          York.
           <br />
           <a href="https://twitter.com/ifyoumakeit">
             You should follow him on Twitter

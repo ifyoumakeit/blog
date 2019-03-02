@@ -8,7 +8,7 @@ import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props;
+    const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const siteDescription = data.site.siteMetadata.description
     const posts = data.allMarkdownRemark.edges
@@ -21,12 +21,14 @@ class BlogIndex extends React.Component {
           title={siteTitle}
         />
         <Bio />
+        <hr style={{ marginBottom: 0 }} />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
+            <article key={node.fields.slug} style={{ padding: rhythm(2) }}>
               <h3
                 style={{
+                  marginTop: 0,
                   marginBottom: rhythm(1 / 4),
                 }}
               >
@@ -36,7 +38,7 @@ class BlogIndex extends React.Component {
               </h3>
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            </article>
           )
         })}
       </Layout>
