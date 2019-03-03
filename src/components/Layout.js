@@ -13,7 +13,7 @@ class Layout extends React.Component {
         <header
           style={{
             backgroundColor: 'var(--header)',
-            padding: [rhythm(1), rhythm(2), rhythm(1.5), rhythm(2)].join(' '),
+            padding: [rhythm(0.5), rhythm(1), rhythm(1.5), rhythm(1)].join(' '),
             color: 'var(--textTitle)',
           }}
         >
@@ -28,8 +28,7 @@ class Layout extends React.Component {
               style={{
                 ...scale(0.75),
                 color: 'var(--textTitle)',
-                marginTop: 0,
-                marginBottom: 0,
+                margin: 0,
               }}
             >
               <Link
@@ -46,18 +45,37 @@ class Layout extends React.Component {
           </div>
         </header>
         <main
-          style={{            
-            marginTop: rhythm(-1),
+          style={{
+            padding: rhythm(0.5),
+            marginTop: rhythm(-1.5),
+          }}
+        >
+          <div
+            style={{
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              maxWidth: rhythm(24),
+              borderRadius: rhythm(0.5),
+              overflow: 'hidden',
+              backgroundColor: 'var(--container)',
+            }}
+          >
+            {children}
+          </div>
+        </main>
+        <footer
+          style={{
             marginLeft: 'auto',
             marginRight: 'auto',
             maxWidth: rhythm(24),
-            borderRadius: rhythm(0.5),
-            overflow: 'hidden',
-            backgroundColor: 'var(--container)',
+            textAlign: 'right',
           }}
         >
-          {children}
-        </main>
+          Copyright 2019 |{' '}
+          <a href="http://www.github.com/ifyoumakeit">GitHub</a> |{' '}
+          <a href="http://www.twitter.com/ifyoumakeit">Twitter</a> |{' '}
+          <a href="http://www.linkedin.com/in/ifyoumakeit">LinkedIn</a>
+        </footer>
       </div>
     )
   }

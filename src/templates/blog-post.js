@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <article style={{ padding: rhythm(2) }}>
+        <article style={{ padding: rhythm(1.25) }}>
           <h1
             style={{
               ...scale(1),

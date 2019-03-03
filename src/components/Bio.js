@@ -12,16 +12,12 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
-          padding: [rhythm(1.5), rhythm(2)].join(' '),
+          padding: [rhythm(1), rhythm(1)].join(' '),
         }}
       >
         <p style={{ margin: 0 }}>
-          Written by <strong>Dave Garwacke</strong> who lives and works in New
-          York.
-          <br />
-          <a href="https://twitter.com/ifyoumakeit">
-            You should follow him on Twitter
-          </a>
+          I'm a front-end developer who lives in Brooklyn and
+          loves building things that people can use and enjoy. 
         </p>
       </div>
     )
