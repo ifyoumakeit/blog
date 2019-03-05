@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: 'Garwacke',
     author: 'Dave Garwacke',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsby-starter-blog-demo.netlify.com/',
+    description: ' A really cool blog by Dave Garwacke, a front-end developer who loves accessibility and building fun things.',
+    siteUrl: 'https://davegarwacke.com',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

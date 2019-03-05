@@ -16,8 +16,8 @@ class Bio extends React.Component {
         }}
       >
         <p style={{ margin: 0 }}>
-          I'm a front-end developer who lives in Brooklyn and
-          loves building things that people can use and enjoy. 
+          A really cool blog by Dave Garwacke, a front-end developer who loves
+          accessibility and building fun things.
         </p>
       </div>
     )
